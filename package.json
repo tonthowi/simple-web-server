@@ -6,8 +6,8 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:ui": "rm -rf ../../reaxercise/simple-web-server/dist && cd ../../fullstack-open-course/part-02/notes-frontend && npm run build && cp -r dist ../../../reaxercise/simple-web-server/",
-    "deploy:full": "npm run build:ui && git add . && git commit -m 'uibuild' && git push"
+    "build:ui": "rm -rf dist && cd /Users/tonthowi/fullstack-open-course/part-02/notes-frontend && npm run build && cp -r dist /Users/tonthowi/reaxercise/simple-web-server",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
   },
   "author": "",
   "license": "ISC",
